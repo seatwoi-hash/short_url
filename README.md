@@ -30,3 +30,7 @@ Python 3.7+ - язык программирования
 Запустите сервер:
 
 `uvicorn main:app --reload`
+
+docker 
+`docker build -t short-servise .`
+`docker run -d -p 8001:8001 --name shorturl-app short-servise`
