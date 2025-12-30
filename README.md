@@ -32,5 +32,7 @@ Python 3.7+ - язык программирования
 `uvicorn main:app --reload`
 
 docker 
-`docker build -t short-servise .`
-`docker run -d -p 8001:8001 --name shorturl-app short-servise`
+
+`docker run -d -p 8001:80 -v shorturl_data:/app/data atatarinov12/shorturl-service:latest`
+
+
